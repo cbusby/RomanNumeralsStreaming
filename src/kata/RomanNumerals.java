@@ -39,30 +39,5 @@ public class RomanNumerals {
 
 		return ListToString.listToString(romans);
 	}
-
-	public void test() {
-		Map<Integer, String> romanConvert = new HashMap<>();
-
-		for (int i = 1; i < 1000; i++) {
-			String temp = "";
-			int v = 111111;
-			if (i > 4){
-				temp += "V";
-
-				v = i - 5;
-			}
-			romanConvert.put(i, temp);
-			if (i < 4 || v < 4){
-
-				for (int z = 1; z <= i; z++) {
-					temp += "I";
-				}
-				romanConvert.put(i, temp);
-			}
-		}
-		System.out.println(romanConvert.get(3).toString());
-		System.out.println(romanConvert.get(5).toString());
-		System.out.println(romanConvert.get(6).toString());
-	}
 }
 

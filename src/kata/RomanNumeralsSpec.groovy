@@ -20,11 +20,8 @@ class RomanNumeralsSpec extends Specification {
 	}
 
 	void "5 returns V"() {
-		given:
-		romanNumerals.test();
 		expect:
-		//romanNumerals.convertArabic(5) == "V"
-		true
+		romanNumerals.convertArabic(5) == "V"
 	}
 
 
